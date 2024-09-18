@@ -61,6 +61,26 @@ main {
     width: 80%;
     margin: 20px 0;
 }
+.project-flex-container {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items at the top */
+    width: 80%;
+    margin: 20px auto; /* Center the container */
+}
+
+.content {
+    flex: 1; /* Allow the content to take available space */
+    min-width: 300px; /* Minimum width for the content area */
+    margin-right: 20px; /* Space between content and video */
+}
+
+.video-container {
+    flex: 0 0 auto; /* Prevent the video from shrinking */
+    max-width: 560px; /* Maximum width for the video */
+}
 
 .about {
     width: 75%;
