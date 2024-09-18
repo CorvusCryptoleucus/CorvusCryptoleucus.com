@@ -10,6 +10,77 @@ body {
     color: #ffffff; /* Light text color */
 }
 
+a {
+    color: #ffc6f4;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #a93edb; /* Color when the link is hovered over */
+}
+
+h2,
+h3 {
+    color: #a93edb;
+}
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav a {
+    margin: 0 15px;
+}
+
+.cc-header img {
+    width: 90%;
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    display: block; /* Prevents bottom space caused by inline elements */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.about {
+    width: 75%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px; /* Adjust as needed */
+}
 .skills-list {
     width: 50%;
 }
@@ -30,6 +101,25 @@ body {
     background-color: #a93edb; /* Progress bar color */
     border-radius: 5px;
     width: 0; /* Start with 0 for the initial load */
-    margin-left: 10px; /* Space between the label and the progress bar */
-    transition: width 0.3s ease; /* Smooth transition for width change */
+    margin-left: 10px; /* Adds space between the label and the progress bar */
+    transition: width 0.3s ease; /* Smooth transition for the width change */
+}
+
+
+/* Add JavaScript to set the width dynamically */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust as needed */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.social-links a {
+    margin: 0 15px;
 }

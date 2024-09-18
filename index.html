@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>CorvusCryptoleucas Portfolio</title>
+    <title>CorvusCryptoleucus Portfolio</title>
 </head>
 <body>
     <header>
@@ -23,6 +23,32 @@
     </header>
     
     <main>
+        <section id="about" class="flex-container">
+            <h2>About Me</h2>
+            <div class="about">
+                <p>Welcome to my digital nest, where creativity and coding intertwine! Here, I harness a magpie's zest for discovery and a raven's keen intellect to bring projects to life.</p>
+                <p>I've been weaving websites and cawing with code since my teenage years in the 90s, but now I'm spreading my wings and taking it much more seriously.</p>
+                <p>My mission is to craft innovative and fun solutions that resonate with depth and meaning, whether they flutter as personal expressions or take flight as professional endeavors. As I nurture these projects, I find joy in watching them grow, much like a mother bird tending to her eggs. I’m excited for the ideas I’m incubating to hatch and soar into the world, each one ready to explore its own horizon.</p>
+            </div>
+        </section>
+        
+        <section id="projects" class="flex-container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Typing Speed Test (Long Version)</h3>
+                    <p>A speed typing test hosted on GitHub Pages, featuring a detailed passage about the Chihuahuan raven. This version demonstrates the implementation of responsive design and real-time performance tracking.</p>
+                    <a href="./projects/long-typing-speed-test.html">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Typing Speed Test (Short Version)</h3>
+                    <p>A speed typing test hosted on GitLab Pages, designed to measure typing speed with a unique test text. This project showcases the deployment process on GitLab and the integration of instant feedback.</p>
+                    <a href=".projects/short-typing-speed-test.html">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        
         <section id="skills" class="flex-container">
             <h2>Skills</h2>
             <div class="skills-list">
@@ -44,7 +70,32 @@
                 </div>
             </div>
         </section>
+        
+        <section id="contact" class="flex-container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/movazbod" method="POST">
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
+    
+    <footer>
+        <p>&copy; 2024 CorvusCryptoleucus. All rights reserved.</p></br>
+        <div class="social-links">
+            <a href="https://instagram.com/corvuscryptoleucus_" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/https://www.linkedin.com/in/korvin-ahimsaka/" target="_blank">LinkedIn</a>
+            <a href="https://bsky.app/profile/corvuscryptoleucus.bsky.social" target="_blank">Bluesky</a>
+            <a href="https://github.com/CorvusCryptoleucus" target="_blank">GitHub</a>
+            <a href="https://gitlab.com/CorvusCryptoleucus" target="_blank">GitLab</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
