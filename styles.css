@@ -92,6 +92,7 @@ main {
     flex: 0 1 100%; /* Prevent the video from shrinking but allow it to grow */
     max-width: 560px; /* Maximum width for the video */
     margin-top: 20px; /* Add margin for spacing on smaller screens */
+}
 
 @media (min-width: 768px) {
     .video-container {
@@ -119,6 +120,7 @@ main {
     border-radius: 5px;
     width: 300px; /* Adjust as needed */
 }
+
 .skills-list {
     width: 50%;
 }
@@ -143,9 +145,6 @@ main {
     transition: width 0.3s ease; /* Smooth transition for the width change */
 }
 
-
-/* Add JavaScript to set the width dynamically */
-
 form {
     display: flex;
     flex-direction: column;
@@ -160,4 +159,31 @@ footer {
 
 .social-links a {
     margin: 0 15px;
+}
+
+/* Screenshots Section */
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images */
+    margin-top: 20px;
+}
+
+.screenshot {
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 10px; /* Add some space around images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Optional: add a hover effect */
+}
+
+.screenshot:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .screenshot {
+        width: calc(100% - 20px); /* Ensure images fit within smaller screens */
+    }
 }
