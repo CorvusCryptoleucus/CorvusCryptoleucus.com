@@ -71,10 +71,11 @@ main {
     width: 80%;
     margin: 20px 0;
 }
+
 .project-flex-container {
     display: flex; /* Use flexbox */
     flex-direction: row; /* Arrange items in a row */
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
     justify-content: space-between; /* Space between items */
     align-items: flex-start; /* Align items at the top */
     width: 80%;
@@ -88,8 +89,15 @@ main {
 }
 
 .video-container {
-    flex: 0 0 auto; /* Prevent the video from shrinking */
+    flex: 0 1 100%; /* Prevent the video from shrinking but allow it to grow */
     max-width: 560px; /* Maximum width for the video */
+    margin-top: 20px; /* Add margin for spacing on smaller screens */
+
+@media (min-width: 768px) {
+    .video-container {
+        flex: 0 0 auto; /* Keep fixed size for larger screens */
+        max-width: 560px; /* Maintain maximum width for the video */
+    }
 }
 
 .about {
