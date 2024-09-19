@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css"> <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="../../styles.css"> 
     <title>Speed Typing Test (Short Version)- CorvusCryptoleucus</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <section id="project-description" class="project-flex-container"> <!-- Use the new class here -->
+        <section id="project-description" class="project-flex-container"> 
             <div class="content">
                 <h2>Speed Typing Test (Short Version)</h2>
                 <p>This project is a web-based speed typing test hosted on GitHub Pages. Users are presented with a comprehensive passage about the Chihuahuan raven, which includes details about its characteristics, habitat, and ecological importance. The application allows users to measure their typing speed in words per minute (WPM) as they type the provided text.</p>
@@ -55,27 +55,32 @@
                 <h3>Link to Project on GitHub:</h3>
                 <p><a href="https://gitlab.com/CorvusCryptoleucus/typing-speed-test" target="_blank">View Project on GitLab</a></p>
             </div>
-            <div class="video-container">
-                <h3>Video Demonstration:</h3>
-                <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID?title=0&byline=0&portrait=0" 
-                        width="560" 
-                        height="315" 
-                        frameborder="0" 
-                        allow="autoplay; fullscreen" 
-                        allowfullscreen></iframe>
+            <div class="media-container">
+                <h3>Media Gallery</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <iframe class="carousel-image" src="https://player.vimeo.com/video/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <img src="../../images/full-screenshot.png" alt="Full Screenshot of the Website" class="carousel-image">
+                        <img src="../../images/laptop-screenshot.png" alt="Screenshot from Laptop" class="carousel-image">
+                        <img src="../../images/phone-screenshot.png" alt="Screenshot from Phone" class="carousel-image">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 CorvusCryptoleucus. All rights reserved.</p>
+        <p>&copy; 2024 CorvusCryptoleucus. All rights reserved.</p></br>
         <div class="social-links">
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="http://bluesky.com" target="_blank">Bluesky</a>
+            <a href="https://instagram.com/corvuscryptoleucus_" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/korvin-ahimsaka/" target="_blank">LinkedIn</a>
+            <a href="https://bsky.app/profile/corvuscryptoleucus.bsky.social" target="_blank">Bluesky</a>
             <a href="https://github.com/CorvusCryptoleucus" target="_blank">GitHub</a>
             <a href="https://gitlab.com/CorvusCryptoleucus" target="_blank">GitLab</a>
         </div>
     </footer>
+    <script src="../../projects/carousel.js"></script> 
 </body>
 </html>

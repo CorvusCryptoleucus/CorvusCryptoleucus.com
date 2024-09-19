@@ -66,17 +66,7 @@ main {
 
 .flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 20px 0;
-}
-
-.project-flex-container {
-    display: flex; /* Use flexbox */
     flex-direction: row; /* Arrange items in a row */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-    justify-content: space-between; /* Space between items */
     align-items: flex-start; /* Align items at the top */
     width: 80%;
     margin: 20px auto; /* Center the container */
@@ -85,20 +75,57 @@ main {
 .content {
     flex: 1; /* Allow the content to take available space */
     min-width: 300px; /* Minimum width for the content area */
-    margin-right: 20px; /* Space between content and video */
+    margin-right: 20px; /* Space between content and media */
+}
+
+.media-container {
+    flex: 0 1 50%; /* Allow the media section to grow, but set a base of 50% */
+    display: flex;
+    flex-direction: column; /* Stack video and carousel */
+    align-items: center; /* Center content horizontally */
 }
 
 .video-container {
-    flex: 0 1 100%; /* Prevent the video from shrinking but allow it to grow */
+    flex: 0 1 auto; /* Fixed size for video */
     max-width: 560px; /* Maximum width for the video */
-    margin-top: 20px; /* Add margin for spacing on smaller screens */
+    margin-top: 20px; /* Add margin for spacing */
 }
 
-@media (min-width: 768px) {
-    .video-container {
-        flex: 0 0 auto; /* Keep fixed size for larger screens */
-        max-width: 560px; /* Maintain maximum width for the video */
-    }
+.carousel {
+    position: relative;
+    max-width: 600px; /* Limit the maximum width */
+    margin: 20px auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-image {
+    min-width: 100%; /* Each image takes full width of the carousel */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000; /* Ensure buttons are above images */
+}
+
+.prev {
+    left: 10px; /* Position the left button */
+}
+
+.next {
+    right: 10px; /* Position the right button */
 }
 
 .about {
@@ -185,5 +212,13 @@ footer {
 @media (max-width: 768px) {
     .screenshot {
         width: calc(100% - 20px); /* Ensure images fit within smaller screens */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .media-container {
+        width: 100%; /* Ensure media container takes full width */
     }
 }

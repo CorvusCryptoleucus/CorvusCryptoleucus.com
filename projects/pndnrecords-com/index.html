@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css"> <!-- Link to the main stylesheet -->
-    <title>pndnrecords.com - CorvusCryptoleucus</title>
+    <title>Remembering PNDN Records: 2000-2003 - CorvusCryptoleucus</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -23,19 +22,19 @@
     </header>
 
     <main>
-        <section id="project-description" class="project-flex-container"> <!-- Use the new class here -->
+        <section id="project-description" class="project-flex-container">
             <div class="content">
                 <h2>pndnrecords.com</h2>
-                <p>pndnrecords.com is a website that chronicles the story of the punk music label I founded, which operated from 2000 to 2003 in Portland, Oregon. This project captures the essence of the DIY ethos that defined our approach to music promotion, highlighting the bands we supported and the cultural impact we made during our brief existence.</p>
-
-                <h3>Key features include</h3>
+                <p>pndnrecords.com is a website that chronicles the story of the punk music label I founded, which operated from 2000 to 2003 in Portland, Oregon. This project captures the essence of the DIY ethos that defined our approach to music promotion, highlighting the bands we supported and the cultural impact we made during our brief existence.
+                <h3>Key Features:</h3>
+                <div class="project-ul">                    
                     <ul>
                         <li>A detailed narrative of the label's history, mission, and the punk scene during the early 2000s.</li>
                         <li>An overview of the bands we worked with, emphasizing the community spirit.</li>
-                        <li>Built using HTML and CSS, featuring a stripped-down design that reflects our punk roots.</li>
+                        <li>Built using HTML and CSS, featuring a clean design that reflects our punk roots.</li>
                     </ul>
-                    <p>Despite its short run, PNDN Records left a lasting mark on the Portland punk landscape, showcasing the power of grassroots movements in shaping cultural narratives.</p>
                 </div>
+                 <p>Despite its short run, PNDN Records left a lasting mark on the Portland punk landscape, showcasing the power of grassroots movements in shaping cultural narratives.</p>
                 <h3>Technologies Used</h3>
                 <ul>
                     <li>HTML</li>
@@ -43,28 +42,36 @@
                     <li>GitHub Pages</li>
                 </ul>
                 <h3>Live Demo:</h3>
-                <p><a href="https://pndnrecords.com/" target="_blank">Explore the live demo of the project here.</a></p>
+                <p><a href="https://pndnrecords.com" target="_blank">Explore the live demo of the project here.</a></p>
                 <h3>Link to Project on GitHub:</h3>
                 <p><a href="https://github.com/CorvusCryptoleucus/pndnrecords.com" target="_blank">View Project on GitHub</a></p>
             </div>
-            <h2>Screenshots</h2>
-            <div class="screenshots">
-                <img src="full-screenshot.png" alt="Full Screenshot of the Website" class="screenshot">
-                <img src="laptop-screenshot.png" alt="Screenshot from Laptop" class="screenshot">
-                <img src="phone-screenshot.png" alt="Screenshot from Phone" class="screenshot">
-            </div>            
+            <div class="media-container">
+                <h3>Media Gallery</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <iframe class="carousel-image" src="https://player.vimeo.com/video/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <img src="../../images/full-screenshot.png" alt="Full Screenshot of the Website" class="carousel-image">
+                        <img src="../../images/laptop-screenshot.png" alt="Screenshot from Laptop" class="carousel-image">
+                        <img src="../../images/phone-screenshot.png" alt="Screenshot from Phone" class="carousel-image">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 CorvusCryptoleucus. All rights reserved.</p>
+        <p>&copy; 2024 CorvusCryptoleucus. All rights reserved.</p></br>
         <div class="social-links">
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="http://bluesky.com" target="_blank">Bluesky</a>
+            <a href="https://instagram.com/corvuscryptoleucus_" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/korvin-ahimsaka/" target="_blank">LinkedIn</a>
+            <a href="https://bsky.app/profile/corvuscryptoleucus.bsky.social" target="_blank">Bluesky</a>
             <a href="https://github.com/CorvusCryptoleucus" target="_blank">GitHub</a>
             <a href="https://gitlab.com/CorvusCryptoleucus" target="_blank">GitLab</a>
         </div>
     </footer>
+    <script src="../../projects/carousel.js"></script> 
 </body>
 </html>
